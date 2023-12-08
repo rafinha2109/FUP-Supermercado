@@ -90,6 +90,7 @@ def fazer_compra():
             print(f"Pagamento em dinheiro. Total a pagar: R$ {total_compra}")
             dinheiro = float(input("Digite o valor que será dado: "))
             troco = dinheiro - total_compra
+            #impede que o usuario tente comprar o produto com menos do que o valor da compra
             if dinheiro < total_compra:
                 print("Valor insuficiente para realizar a compra")
             else:
